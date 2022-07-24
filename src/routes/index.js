@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Signin from "../pages/Home/Signin";
 import Signup from "../pages/Home/Signup";
+import useAuth from "../hooks/useAuth";
 
 /*Verificase esta logado, se sim, mostra o home */
 const Private =({Item}) =>{
-    const signed = false;
+    const {signed} = useAuth();//ve se o usuario ta logado ou nao
 
     return signed > 0 ? <Item /> : <Signin />;
 }
