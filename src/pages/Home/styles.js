@@ -9,4 +9,6 @@ export const Container = styled.div`
  height: 100vh;
 `;
 
-export const Title = styled.h2``;
+export const Title = styled.h2`
+ color:#ffffff
+`;
