@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Signin from "../pages/Home/Signin";
-import Signup from "../pages/Home/Signup";
+import Signin from "../pages/Signin";
+import Signup from "../pages/Signup";
 import useAuth from "../hooks/useAuth";
 
 /*Verificase esta logado, se sim, mostra o home */
